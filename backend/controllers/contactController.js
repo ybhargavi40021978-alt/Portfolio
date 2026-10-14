@@ -1,4 +1,4 @@
-const Contact = require('../models/Contact');
+const Contact = require('../../database/models/Contact');
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

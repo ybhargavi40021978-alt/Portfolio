@@ -55,6 +55,53 @@ A modern, responsive, and performance-optimized personal portfolio web applicati
 
 ---
 
+## 📁 Project Architecture
+
+The codebase is organized into separated modules for **frontend**, **backend**, and **database**:
+
+```text
+Portfolio/
+├── frontend/                     # Pure client-side presentation & UI logic
+│   ├── index.html                # Home page
+│   ├── about.html                # About page
+│   ├── skills.html               # Skills page
+│   ├── projects.html             # Projects page
+│   ├── contact.html              # Contact page
+│   ├── styles.css                # Global stylesheet & design tokens
+│   ├── app.js                    # Home page client script
+│   ├── about.js                  # About page client script
+│   ├── skills.js                 # Skills page client script
+│   ├── projects.js               # Projects page client script
+│   ├── contact.js                # Contact page client script
+│   ├── theme.js                  # Dark/light theme & global utilities
+│   └── resume.pdf                # Downloadable resume
+│
+├── backend/                      # Express.js REST API server & middleware
+│   ├── controllers/              # Business logic & request handlers
+│   ├── middleware/               # Centralized error handlers & limiters
+│   ├── routes/                   # Modular REST route definitions
+│   └── server.js                 # Express server configuration
+│
+├── database/                     # MongoDB connection, schemas & seeding
+│   ├── db.js                     # Mongoose connection logic
+│   ├── seed.js                   # Database seeder script
+│   └── models/                   # Mongoose data schemas
+│       ├── Analytics.js
+│       ├── Contact.js
+│       ├── Profile.js
+│       ├── Project.js
+│       └── Skill.js
+│
+├── .env.example                  # Environment template
+├── .gitignore                    # Git ignore file
+├── package.json                  # Root npm configuration & scripts
+├── README.md                     # Documentation
+├── server.js                     # Root launcher
+└── test_features.js              # Integration test suite
+```
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites

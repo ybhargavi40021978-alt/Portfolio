@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Project = require('../models/Project');
+const Project = require('../../database/models/Project');
 
 /**
  * @desc   Get projects with advanced discovery (search, category, tech, sort)

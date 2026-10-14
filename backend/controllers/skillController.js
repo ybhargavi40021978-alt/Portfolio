@@ -1,4 +1,4 @@
-const Skill = require('../models/Skill');
+const Skill = require('../../database/models/Skill');
 
 const CATEGORY_METADATA = {
   'Frontend': {

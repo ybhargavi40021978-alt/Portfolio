@@ -1,4 +1,4 @@
-const Analytics = require('../models/Analytics');
+const Analytics = require('../../database/models/Analytics');
 
 function getDeviceType(userAgent = '') {
   const ua = userAgent.toLowerCase();

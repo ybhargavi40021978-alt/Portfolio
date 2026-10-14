@@ -1,4 +1,4 @@
-const Profile = require('../models/Profile');
+const Profile = require('../../database/models/Profile');
 
 /**
  * @desc   Get portfolio profile information
